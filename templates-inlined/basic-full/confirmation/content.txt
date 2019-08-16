@@ -8,7 +8,9 @@ Hi {{ .User.FullName}},
 
 Congratulations ! Your registration on Dataflow Kit has been successfully processed.
 
-Please confirm your email ( {{ .Host }}/confirm?token={{ .User.ConfirmationToken }}&email={{ .User.Email }} )
+By just registering, you received 1000 free credits for using Dataflow Kit services.
+
+Please confirm your email ( {{ .Link }} )
 
 If you did not register your account on https://dataflowkit.com web site, please ignore this email or contact support (dfk@dataflowkit.com) if you have questions.
 
@@ -17,7 +19,7 @@ The Dataflow Kit Team
 
 If you’re having trouble with the button above, copy and paste the URL below into your web browser.
 
-{{ .Host }}/recovery?token={{ .User.RecoveryToken }}&email={{ .User.Email }}
+{{ .Link }}
 
 © 2019 Dataflow Kit. All rights reserved.
 
