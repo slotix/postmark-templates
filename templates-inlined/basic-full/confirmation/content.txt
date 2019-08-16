@@ -1,0 +1,30 @@
+Use this link to confirm your registration. The link is only valid for 24 hours.
+
+[Dataflow Kit] ( https://dataflowkit.com )
+
+************
+Hi {{ .User.FullName}},
+************
+
+Congratulations ! Your registration on Dataflow Kit has been successfully processed.
+
+Please confirm your email ( {{ .Host }}/confirm?token={{ .User.ConfirmationToken }}&email={{ .User.Email }} )
+
+If you did not register your account on https://dataflowkit.com web site, please ignore this email or contact support (dfk@dataflowkit.com) if you have questions.
+
+Thanks,
+The Dataflow Kit Team
+
+If you’re having trouble with the button above, copy and paste the URL below into your web browser.
+
+{{ .Host }}/recovery?token={{ .User.RecoveryToken }}&email={{ .User.Email }}
+
+© 2019 Dataflow Kit. All rights reserved.
+
+Slotix s.r.o.
+
+Špitálska 53
+
+Bratislava
+
+Slovakia
